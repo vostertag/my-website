@@ -1,0 +1,136 @@
+
+<canvas width="400" height="400" id="snake"></canvas>
+
+<script>
+function startGame() {
+  gameArea.init(20, "black", 80);
+  snake.init(2, 2, 0, 0, "red");
+  food.init("green");
+}
+
+var gameArea = {
+    init : function(tileNumber, color, speed) {
+      this.canvas = document.getElementById("snake");
+      this.context = this.canvas.getContext("2d");
+      this.tileNumber = tileNumber;
+      this.gridColor = color;
+      this.tileSize = this.canvas.width / tileNumber;
+      this.interval = setInterval(updateGameArea, speed);
+    },
+    clear : function() {
+    ctx = gameArea.context;
+     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+     ctx.fillStyle = this.gridColor;
+     ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+   }
+}
+
+
+var snake = {
+  init : function(x, y, vx, vy, color){
+    this.snakeArray = [[(x-1)*gameArea.tileSize,(y-1)*gameArea.tileSize]];
+    this.vx = vx;
+    this.vy = vy;
+    this.color = color;
+  },
+  update : function(){
+    ctx = gameArea.context;
+    ctx.fillStyle = this.color;
+    for(var i=this.snakeArray.length-1 ; i>0 ; i--){
+      this.snakeArray[i][0] = this.snakeArray[i-1][0];
+      this.snakeArray[i][1] = this.snakeArray[i-1][1];
+      ctx.fillRect(this.snakeArray[i][0], this.snakeArray[i][1], gameArea.tileSize, gameArea.tileSize);
+    }
+    this.snakeArray[0][0] = this.snakeArray[0][0] + this.vx*gameArea.tileSize;
+    this.snakeArray[0][1] = this.snakeArray[0][1] + this.vy*gameArea.tileSize;
+    ctx.fillRect(this.snakeArray[0][0], this.snakeArray[0][1], gameArea.tileSize, gameArea.tileSize);
+  }
+}
+
+var food = {
+  init : function(color){
+    this.color = color;
+    this.x;
+    this.y;
+    this.create();
+  },
+  create : function(){
+    var isOnSnake = true;
+    while(isOnSnake){
+      this.x = (Math.floor((Math.random() * gameArea.tileNumber) + 1)-1)*gameArea.tileSize;
+      this.y = (Math.floor((Math.random() * gameArea.tileNumber) + 1)-1)*gameArea.tileSize;
+      for(var i=0 ; i<snake.snakeArray.length ; i++){
+        if(snake.snakeArray[i][0] != this.x || snake.snakeArray[0][i] != this.y){
+          isOnSnake = false;
+        }
+      }
+    }
+  },
+  update : function(){
+    ctx = gameArea.context;
+    ctx.fillStyle = this.color;
+    ctx.fillRect(this.x, this.y, gameArea.tileSize, gameArea.tileSize);
+  }
+}
+
+var collision = {
+  wall : function(){
+    if(snake.snakeArray[0][0] <= 1){
+      snake.snakeArray[0][0] = gameArea.canvas.width;
+    }if(snake.snakeArray[0][0] > gameArea.canvas.width){
+      snake.snakeArray[0][0] = 0;
+    }if(snake.snakeArray[0][1] < 0){
+      snake.snakeArray[0][1] = gameArea.canvas.height;
+    }if(snake.snakeArray[0][1] > gameArea.canvas.height){
+      snake.snakeArray[0][1] = 0;
+    }
+  },
+  checkAll : function(){
+    this.wall();
+  }
+}
+
+document.onkeydown = function (event) {
+  keyCode = window.event.keyCode;
+  keyCode = event.keyCode;
+
+  switch (keyCode) {
+
+  case 37:
+    if (snake.vx != 1) {
+      snake.vx = -1;
+      snake.vy = 0;
+    }
+    break;
+  case 39:
+    if (snake.vx != -1) {
+      snake.vx = 1;
+      snake.vy = 0;
+    }
+    break;
+
+  case 38:
+    if (snake.vy != 1) {
+      snake.vy = -1;
+      snake.vx = 0;
+    }
+    break;
+
+  case 40:
+    if (snake.vy != -1) {
+      snake.vy = 1;
+      snake.vx = 0;
+    }
+    break;
+  }
+}
+
+function updateGameArea() {
+    gameArea.clear();
+    collision.checkAll();
+    snake.update();
+    food.update();
+}
+
+startGame();
+</script>
