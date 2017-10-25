@@ -1,4 +1,5 @@
 var en = {
+  "switch-language" : "Je parle aussi <a id='langue' href='?langue=en'>français</a>",
   "projets_header" : "Projects",
   "qui_suis_je_header" : "About me",
   "me_contacter_header" : "Contact",
