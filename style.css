@@ -347,6 +347,10 @@ header{
     display: none;
   }*/
 
+  .bubble{
+    top:20px;
+  }
+
   .landing-photo img{
     height: 150px;
   }
