@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Victor OSTERTAG - Étudiant à l'ISEP</title>
-    <meta name="description" content="Étudiant à l'ISEP">
+    <title>Victor OSTERTAG - Étudiant à l'ISEP et à Cranfield</title>
+    <meta name="description" content="Étudiant à l'ISEP et à Cranfield">
     <link rel="icon" type="image/png" href="images/logo_vo_64.png" sizes="64x64">
 
     <!-- Facebook -->
@@ -43,6 +43,8 @@
 
     [
       'https://code.jquery.com/jquery-3.2.1.min.js',
+      'lang_fr.js',
+      'lang_en.js',
       'functions.js',
       'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'
     ].forEach(function(src) {
@@ -60,6 +62,10 @@
           <div class="col-md-12">
             <div class="row equal">
 
+              <div>
+                <a id="langue" href="?lang=en">EN</a>
+              </div>
+
               <div class="col-md-4 col-sm-3 col-xs-12 logo-header">
                 <a href="">
                   <img class="logo-top" src="images/logo_vo.png" alt="Logo du site"/>
@@ -70,13 +76,13 @@
                 <nav>
                   <div class="row">
                     <div class="col-sm-3 col-xs-4 link-header">
-                      <a href="#projets" title="Mes projets">Projets</a>
+                      <a href="#projets" title="Mes projets" id="projets_header">Projets</a>
                     </div>
                     <div class="col-sm-3 col-xs-4 link-header">
-                      <a href="#bio" title="Apprenez en plus sur moi">Qui suis-je</a>
+                      <a href="#bio" title="Apprenez en plus sur moi" id="qui_suis_je_header">Qui suis-je</a>
                     </div>
-                    <div class="col-sm-3 col-xs-4 link-header">
-                      <a href="#contact" title="Me contacter">Contact</a>
+                    <div class="col-sm-2 col-xs-4 link-header">
+                      <a href="#contact" title="Me contacter" id="me_contacter_header">Contact</a>
                     </div>
                   </div>
                 </nav>
@@ -92,14 +98,14 @@
       <div class="landing-infos">
         <div class="landing-card">
           <div class="landing-photo animated flipInY">
-            <img src="images/moi.jpg" alt="Victor Ostertag"/>
+            <img src="images/victor-png-petit.png" alt="Victor Ostertag"/>
           </div>
 
           <h1 class="animated flipInX"><span>Victor</span> Ostertag</h1>
 
           <div class="animated flipInX">
             <div class="landing-about">
-              <span>Un endroit pour en apprendre un peu plus sur moi, mes passions et mes projets</span>
+              <span id="introduction">Un endroit pour en apprendre un peu plus sur moi, mes passions et mes projets</span>
             </div>
           </div>
         </div>
@@ -108,7 +114,7 @@
 
     <section id="projets">
       <div class="section-title-div">
-        <h1 class="section-title"><i class="fa fa-rocket" aria-hidden="true"></i> Mes projets</h1>
+        <h1 class="section-title"><i class="fa fa-rocket" aria-hidden="true"></i> <span id="titre_mes_projets">Mes projets</span></h1>
       </div>
 
       <div class="row">
@@ -122,7 +128,7 @@
 
               <hr class="project-seperation">
 
-              <p class="project-description">
+              <p class="project-description" id="resume_p1">
                 Projet <b>fait à l'ISEP</b> dont le but était de créer une application web <b>facilitant l'échange entre les
                 professeurs et les élèves</b>. J'ai fait parti du groupe des Opossums (qu'on peut voir sur cette photo) et ensemble
                 nous avons vendu et conçu le site.
@@ -138,7 +144,7 @@
                   <div class="col-xs-1 text-center">
                     <span class="stat-title" data-toggle="tooltip" title="Résultat"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
                   </div>
-                  <div class="col-sm-11 col-xs-10">
+                  <div class="col-sm-11 col-xs-10" id="resultat_p1">
                     18.5/20 pour le marketing/conception, 17.4/20 pour le développement
                   </div>
                 </div>
@@ -146,7 +152,7 @@
                   <div class="col-xs-1 text-center">
                     <span class="stat-title" data-toggle="tooltip" title="Calendrier"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                   </div>
-                  <div class="col-sm-11 col-xs-10">
+                  <div class="col-sm-11 col-xs-10" id="date_p1">
                     Avril 2017 - Juin 2017
                   </div>
                 </div>
@@ -154,7 +160,7 @@
                   <div class="col-xs-1 text-center">
                     <span class="stat-title" data-toggle="tooltip" title="Compétences"><i class="fa fa-wrench" aria-hidden="true"></i></span>
                   </div>
-                  <div class="col-sm-11 col-xs-10">
+                  <div class="col-sm-11 col-xs-10" id="competences_p1">
                     Travail en équipe, scrum, relation avec un client, HTML, CSS, JavaScript/jQuery, Spring Boot, Bootstrap, plusieurs librairies
                   </div>
                 </div>
@@ -175,14 +181,14 @@
             </div>
 
             <div class="col-lg-6 col-md-12 project-infos">
-              <h2 class="project-title">Chaîne YouTube</h2>
+              <h2 class="project-title" id="nom_p2">Chaîne YouTube</h2>
 
               <hr class="project-seperation">
 
-              <p class="project-description">
+              <p class="project-description" id="resume_p2">
                 Je fais des vidéos sur YouTube portant principalement sur <b>l'univers du jeux-vidéo</b>
                 mais également sur <b>n'importe quel sujet qui peut me paraître intéressant</b> à traiter,
-                comme l'histoire ou l'informatique par exemple.
+                comme l'histoire, la science, des faits étonannts ou l'informatique par exemple.
                 <br><br>
                 S'occuper seul d'une chaîne YouTube est <b>très prenant et passionant</b> : on est à la fois auteur, comédien,
                 réalisateur, monteur, marketer, ... Comme pour la programmation, il faut être <b>autodidacte</b>, un point que j'apprécie
@@ -196,7 +202,7 @@
                   <div class="col-xs-1 text-center">
                     <span class="stat-title" data-toggle="tooltip" title="Résultat"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
                   </div>
-                  <div class="col-sm-11 col-xs-10">
+                  <div class="col-sm-11 col-xs-10" id="resultat_p2">
                     +100 000 abonnés, +9 millions de vues
                   </div>
                 </div>
@@ -204,7 +210,7 @@
                   <div class="col-xs-1 text-center">
                     <span class="stat-title" data-toggle="tooltip" title="Calendrier"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                   </div>
-                  <div class="col-sm-11 col-xs-10">
+                  <div class="col-sm-11 col-xs-10" id="date_p2">
                     Depuis le 26 juillet 2011, lorsque j'avais 15 ans
                   </div>
                 </div>
@@ -212,7 +218,7 @@
                   <div class="col-xs-1 text-center">
                     <span class="stat-title" data-toggle="tooltip" title="Compétences"><i class="fa fa-wrench" aria-hidden="true"></i></span>
                   </div>
-                  <div class="col-sm-11 col-xs-10">
+                  <div class="col-sm-11 col-xs-10" id="competences_p2">
                     Sony Vegas, Premiere Pro, After Effects, Photoshop, écriture, tournage, SEO, gestion de communauté, ...
                   </div>
                 </div>
@@ -233,11 +239,11 @@
             </div>
 
             <div class="col-lg-6 col-md-12 project-infos">
-              <h2 class="project-title">Ce site web</h2>
+              <h2 class="project-title" id="nom_p3">Ce site web</h2>
 
               <hr class="project-seperation">
 
-              <p class="project-description">
+              <p class="project-description" id="resume_p3">
                 Ce site a pour but de <b>montrer ce que j'ai pu faire</b> et de vous permettre <b>d'avoir rapidement une idée de qui je suis</b>... Je pense qu'il est
                 important d'avoir un portfolio pour un développeur.
                 <br></br>
@@ -252,7 +258,7 @@
                   <div class="col-xs-1 text-center">
                     <span class="stat-title" data-toggle="tooltip" title="Résultat"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
                   </div>
-                  <div class="col-sm-11 col-xs-10">
+                  <div class="col-sm-11 col-xs-10" id="resultat_p3">
                     Ma mère le trouve joli... (J'ai pas eu plus de retours pour le moment)
                   </div>
                 </div>
@@ -260,15 +266,15 @@
                   <div class="col-xs-1 text-center">
                     <span class="stat-title" data-toggle="tooltip" title="Calendrier"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                   </div>
-                  <div class="col-sm-11 col-xs-10">
-                    12 juillet 2017 - 13 juillet 2017 pour le front (j'ajouterai sûrement un back plus tard)
+                  <div class="col-sm-11 col-xs-10" id="date_p3">
+                    12 juillet 2017 - 13 juillet 2017
                   </div>
                 </div>
                 <div class="row project-stats-div">
                   <div class="col-xs-1 text-center">
                     <span class="stat-title" data-toggle="tooltip" title="Compétences"><i class="fa fa-wrench" aria-hidden="true"></i></span>
                   </div>
-                  <div class="col-sm-11 col-xs-10">
+                  <div class="col-sm-11 col-xs-10" id="competences_p3">
                     HTML, CSS, JavaScript/jQuery, Bootstrap, utilisation de quelques librairies
                   </div>
                 </div>
@@ -289,11 +295,11 @@
             </div>
 
             <div class="col-lg-6 col-md-12 project-infos">
-              <h2 class="project-title">Présentations orales</h2>
+              <h2 class="project-title" id="nom_p4">Présentations orales</h2>
 
               <hr class="project-seperation">
 
-              <p class="project-description">
+              <p class="project-description" id="resume_p4">
                 <b>J'aime beaucoup faire des présentations orales</b> et je porte beaucoup d'attention à l'aspect de mes slides. Je pense
                 qu'elles doivent <b>comporter très peu de mots, et servir d'outil pour capter l'attention de l'audience</b> et non pas servir
                 de notes comme c'est trop souvent le cas.
@@ -309,7 +315,7 @@
                   <div class="col-xs-1 text-center">
                     <span class="stat-title"><i class="fa fa-line-chart" aria-hidden="true" data-toggle="tooltip" title="Résultat"></i></span>
                   </div>
-                  <div class="col-sm-11 col-xs-10">
+                  <div class="col-sm-11 col-xs-10" id="resultat_p4">
                     J'ai toujours eu des commentaires positifs sur l'aspect mes slides à la fin d'une présentation
                   </div>
                 </div>
@@ -317,7 +323,7 @@
                   <div class="col-xs-1 text-center">
                     <span class="stat-title" data-toggle="tooltip" title="Calendrier"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                   </div>
-                  <div class="col-sm-11 col-xs-10">
+                  <div class="col-sm-11 col-xs-10" id="date_p4">
                     Depuis le collège... probablement
                   </div>
                 </div>
@@ -346,11 +352,11 @@
             </div>
 
             <div class="col-lg-6 col-md-12 project-infos">
-              <h2 class="project-title">Photos</h2>
+              <h2 class="project-title" id="nom_p5">Photos</h2>
 
               <hr class="project-seperation">
 
-              <p class="project-description">
+              <p class="project-description" id="resume_p5">
                 C'est <b>assez récent</b> mais pas étonnant vu mon intérêt pour la création de vidéo. Je suis très loin d'être un professionel,
                 il me reste encore énormément à apprendre et à découvrir !
                 <br><br>
@@ -373,7 +379,7 @@
                   <div class="col-xs-1 text-center">
                     <span class="stat-title" data-toggle="tooltip" title="Calendrier"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                   </div>
-                  <div class="col-sm-11 col-xs-10">
+                  <div class="col-sm-11 col-xs-10" id="date_p5">
                     Depuis juin 2017
                   </div>
                 </div>
@@ -381,7 +387,7 @@
                   <div class="col-xs-1 text-center">
                     <span class="stat-title" data-toggle="tooltip" title="Compétences"><i class="fa fa-wrench" aria-hidden="true"></i></span>
                   </div>
-                  <div class="col-sm-11 col-xs-10">
+                  <div class="col-sm-11 col-xs-10" id="competences_p5">
                     Photographie, Photoshop
                   </div>
                 </div>
@@ -398,7 +404,7 @@
 
     <section id="bio">
       <div class="section-title-div">
-        <h1 class="section-title"><i class="fa fa-id-card-o" aria-hidden="true"></i> Qui suis-je ?</h1>
+        <h1 class="section-title"><i class="fa fa-id-card-o" aria-hidden="true"></i> <span id="qui_suis_je_titre">Qui suis-je ?</span></h1>
       </div>
 
       <div class="row">
@@ -407,14 +413,13 @@
             <div class="col-lg-4 col-md-12 bio-photo">
             </div>
             <div class="col-lg-8 col-md-12 bio-infos">
-              <p class="bio-qa">Ma date de naissance ? <span>Le 9 octobre 1995</span></p>
-              <p class="bio-qa">Où suis-je en ce moment ? <span>En vacances en Alsace !</span></p>
-              <p class="bio-qa">Où est-ce que j'étudie ? <span>A Cranfield et à l'ISEP</span></p>
-              <p class="bio-qa">Qu'est-ce que je fais en ce moment ? <span>Je suis toujours étudiant !</span></p>
-              <p class="bio-qa">Où est-ce que je me vois plus tard ? <span>Je déteste la routine, ça se voit d'ailleurs sur ma chaîne YouTube : j'ai fait tous les types de vidéo possibles et imaginables.
-              J'aimerais donc avoir un emploi où chaque projet est différent et avec un maximum de libertés dans l'exécution de ces derniers.</span></p>
-              <p class="bio-qa">Mes hobbies ? <span>Le code, les jeux-vidéo, l'histoire, les voyages (ouais ok, c'est pas très original ça),
-                le montage de vidéo, tout ce qui touche à Intenet, le tennis, l'escalade et le rugby.</span></p>
+              <p class="bio-qa" id="question1">Ma date de naissance ? <span>Le 9 octobre 1995</span></p>
+              <p class="bio-qa" id="question2">Où suis-je en ce moment ? <span>En train d'étudier à Cranfield !</span></p>
+              <p class="bio-qa" id="question3">Où est-ce que j'étudie ? <span>A Cranfield et à l'ISEP</span></p>
+              <p class="bio-qa" id="question4">Mon expérience ? <span>J'étais développeur web chez Equinoa et ai fait pas mal de projets en groupe lors de mes études.</span></p>
+              <p class="bio-qa" id="question5">Où est-ce que je me vois plus tard ? <span>Je ne sais pas trop ! Je pense que pour trouver ce qui nous
+              motive vraiment, il faut essayer un maximum de choses. C'est donc ce que je compte faire, et si quelque chose me plaît vraiment, j'aurais trouvé la réponse à cette question !</span></p>
+              <p class="bio-qa" id="question6">D'autres questions ? <span>Contactez-moi !</span></p>
             </div>
           </div>
         </div>
@@ -427,6 +432,7 @@
           <p class="contact-mail"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:contact@victorostertag.fr" target="_blank">contact@victorostertag.fr</a></p>
           <a href="https://www.linkedin.com/in/victor-ostertag/" target="_blank" title="linkedin"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
           <a href="https://twitter.com/victorOstertag" target="_blank" title="twitter"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a>
+          <a href="https://github.com/vostertag" target="_blank" title="github"><i class="fa fa-github-square fa-lg" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>

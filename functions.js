@@ -1,5 +1,16 @@
 $( document ).ready(function() {
 
+
+
+  if (window.location.search.indexOf('lang=en') > -1) {
+    $("#langue").text("FR");
+    url = $(location).attr('href');
+    $("#langue").attr("href", url.substring(0, url.indexOf('?')));
+    $.each(en, function(key,value) {
+      $("#" + key).html(value);
+    });
+  }
+
   $(".link-header").hover(function () {
     $(this).addClass("animated pulse");
   },

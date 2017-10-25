@@ -50,6 +50,10 @@ header{
   width: 75px;
 }
 
+#langue{
+  cursor: pointer;
+}
+
 .logo-scroll{
   width: 45px;
   -webkit-transition: all 0.3s;
@@ -80,9 +84,9 @@ header{
 }
 
 .landing-photo img{
-  height: 300px;
-  border-radius: 100%;
-  border: 6px solid #1370c6;
+  height: 350px;
+  /*border-radius: 100%;
+  border: 6px solid #1370c6;*/
 }
 
 .landing-infos h1{
@@ -91,6 +95,7 @@ header{
   text-transform: uppercase;
   font-weight: bold;
   padding: 10px;
+  margin-top: 0px;
   color: #1370c6;
 }
 
@@ -185,7 +190,7 @@ header{
 }
 
 .bio-photo{
-  background: url('images/moi3.jpg') no-repeat;
+  background: url('images/sevilla.jpg') no-repeat;
   height: 325px;
   background-position: center;
   background-size: cover;
@@ -260,7 +265,6 @@ header{
 @media screen and (max-width: 767px){
   .landing-photo img{
     height: 200px;
-    border: 4px solid #1370c6;
   }
 
   .logo-top{
@@ -289,7 +293,6 @@ header{
 
   .landing-photo img{
     height: 150px;
-    border: 4px solid #1370c6;
   }
 
   .landing-about{
