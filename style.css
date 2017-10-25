@@ -291,6 +291,10 @@ header{
     margin-top: 5px;
   }
 
+  .header-scroll{
+    display: none;
+  }
+
   .landing-photo img{
     height: 150px;
   }
