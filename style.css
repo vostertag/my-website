@@ -2,10 +2,13 @@ html, body {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 body{
   background-color: #e9ebee !important;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 a, a:hover{
@@ -243,6 +246,13 @@ header{
   background-size: cover;
 }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
 .bio-infos{
   text-align: left;
   padding: 20px;
@@ -284,6 +294,40 @@ header{
   cursor: pointer;
 }
 
+.projects-gallery{
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.caption{
+  text-align: justify;
+}
+
+.thumbnail{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.instruction{
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.caption .project-title{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.caption .project-seperation{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 @media screen and (max-width: 1024px){
   .link-header{
     font-size: 18px;
@@ -310,6 +354,11 @@ header{
 }
 
 @media screen and (max-width: 767px){
+  .projects-gallery{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   .landing-photo img{
     height: 200px;
   }

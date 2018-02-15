@@ -115,290 +115,172 @@
         <h1 class="section-title"><i class="fa fa-rocket" aria-hidden="true"></i> <span id="titre_mes_projets">Mes projets</span></h1>
       </div>
 
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 card-project">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 project-image" style="background:url('images/Opossums_q.jpg') no-repeat; background-size: cover; background-position: center;">
-            </div>
+      <p class="instruction" id="instruction">Pour plus d'informations sur un projet, cliquez dessus !</p>
 
-            <div class="col-lg-6 col-md-12 project-infos">
-              <h2 class="project-title">ISEPReact</h2>
-
-              <hr class="project-seperation">
-
-              <p class="project-description" id="resume_p1">
-                Projet <b>fait à l'ISEP</b> dont le but était de créer une application web <b>facilitant l'échange entre les
-                professeurs et les élèves</b>. J'ai fait parti du groupe des Opossums (qu'on peut voir sur cette photo) et ensemble
-                nous avons vendu et conçu le site.
-                <br><br>
-                Ce projet est <b>certainement le meilleur que j'ai pu faire</b> au sein de ma scolarité. C'était un plaisir de travailler
-                avec ce groupe et nous avons tous fait beaucoup d'effort pour avoir un résultat dont nous sommes fiers.
-              </p>
-
-              <hr class="project-seperation">
-
-              <div class="project-stats">
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title" data-toggle="tooltip" title="Résultat"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="resultat_p1">
-                    18.5/20 pour le marketing/conception, 17.4/20 pour le développement
-                  </div>
-                </div>
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title" data-toggle="tooltip" title="Calendrier"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="date_p1">
-                    Avril 2017 - Juin 2017
-                  </div>
-                </div>
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title" data-toggle="tooltip" title="Compétences"><i class="fa fa-wrench" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="competences_p1">
-                    Travail en équipe, scrum, relation avec un client, HTML, CSS, JavaScript/jQuery, Spring Boot, Bootstrap, plusieurs librairies
-                  </div>
-                </div>
+      <div class="row projects-gallery">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/lights.jpg">
+              <img src="images/Opossums_q.jpg" alt="Lights" style="width:100%">
+              <div class="caption">
+                <h2 class="project-title" id="title_p1">ISEPReact</h2>
+                <hr class="project-seperation">
+                <p id="resume_p1"><b>ISEPReact</b> est un site <b>facilitant l'échange entre les professeurs et les élèves</b>. J'ai fait parti du groupe des Opossums (qu'on peut voir sur cette photo) et ensemble nous avons vendu et conçu le site.</p>
+                <p><i class="fa fa-calendar" aria-hidden="true"></i> <span id="date_p1">Avril 2017 - Juin 2017</span></p>
+                <p><i class="fa fa-wrench" aria-hidden="true"></i> <span id="competences_p1">Scrum, HTML, CSS, JavaScript, Spring Boot, Bootstrap</span></p>
               </div>
-
-              <hr class="project-seperation">
-
-              <a href="https://www.youtube.com/watch?v=xyKSgxx-89o" target="_blank" title="Vidéo présentant l'application"><i class="fa fa-external-link fa-3x project-link" aria-hidden="true"></i></a>
-            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/nature.jpg">
+              <img src="images/gnuplot.png" alt="Nature" style="width:100%">
+              <div class="caption">
+                <h2 class="project-title" id="title_p2">Equation de la chaleur</h2>
+                <hr class="project-seperation">
+                <p id="resume_p2">Programme codé en C++ <b>résolvant l'équation de la chaleur</b> à l'aide de différentes méthodes numériques. Le programme <b>produit des fichiers .dat</b> et <b>des commandes gnuplot</b>
+                afin de visualiser la solution sur un graphique.</p>
+                <p><i class="fa fa-calendar" aria-hidden="true"></i> <span id="date_p2">Novembre 2017 - Décembre 2017</span></p>
+                <p><i class="fa fa-wrench" aria-hidden="true"></i> <span id="competences_p2">C++, méthodes de calcul d'équations différentielles</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/fjords.jpg">
+              <img src="images/metro.png" alt="Fjords" style="width:100%">
+              <div class="caption">
+                <h2 class="project-title" id="title_p3">Métro parisien</h2>
+                <hr class="project-seperation">
+                <p id="resume_p3">Programme codé en Java <b>fabriquant un graphe du métro parisien</b> à l'aide des données de la RATP et permettant à l'utilisateur de <b>trouver le chemin le plus rapide ou le plus long entre deux stations de métro</b>.</p>
+                <p><i class="fa fa-calendar" aria-hidden="true"></i> <span id="date_p3">Mai 2017 - Juin 2017</span></p>
+                <p><i class="fa fa-wrench" aria-hidden="true"></i> <span id="competences_p3">Java, théorie des graphes, JavaScript, HTML, CSS</span></p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 card-project">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 project-image" style="background:url('images/ytbe.jpg') no-repeat; background-size: cover; background-position: center;">
-            </div>
-
-            <div class="col-lg-6 col-md-12 project-infos">
-              <h2 class="project-title" id="nom_p2">Chaîne YouTube</h2>
-
-              <hr class="project-seperation">
-
-              <p class="project-description" id="resume_p2">
-                Je fais des vidéos sur YouTube portant principalement sur <b>l'univers du jeux-vidéo</b>
-                mais également sur <b>n'importe quel sujet qui peut me paraître intéressant</b> à traiter,
-                comme l'histoire, la science, des faits étonannts ou l'informatique par exemple.
-                <br><br>
-                S'occuper seul d'une chaîne YouTube est <b>très prenant et passionant</b> : on est à la fois auteur, comédien,
-                réalisateur, monteur, marketer, ... Comme pour la programmation, il faut être <b>autodidacte</b>, un point que j'apprécie
-                énormément.
-              </p>
-
-              <hr class="project-seperation">
-
-              <div class="project-stats">
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title" data-toggle="tooltip" title="Résultat"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="resultat_p2">
-                    +100 000 abonnés, +9 millions de vues
-                  </div>
-                </div>
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title" data-toggle="tooltip" title="Calendrier"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="date_p2">
-                    Depuis le 26 juillet 2011, lorsque j'avais 15 ans
-                  </div>
-                </div>
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title" data-toggle="tooltip" title="Compétences"><i class="fa fa-wrench" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="competences_p2">
-                    Sony Vegas, Premiere Pro, After Effects, Photoshop, écriture, tournage, SEO, gestion de communauté, ...
-                  </div>
-                </div>
+      <div class="row projects-gallery">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/lights.jpg">
+              <img src="images/taxis3.gif" alt="Lights" style="width:100%">
+              <div class="caption">
+                <h2 class="project-title" id="title_p4">Borne de taxi</h2>
+                <hr class="project-seperation">
+                <p id="resume_p4">Programme codé en C pour Unix <b>simulant une borne de taxi</b> à l'aide de <b>plusieurs processeurs</b>. Un processeur traite les demandes stockées dans un fichier .dat et les autres simulent les taxis prenant en charge les clients.</p>
+                <p><i class="fa fa-calendar" aria-hidden="true"></i> <span id="date_p4">Janvier 2018</span></p>
+                <p><i class="fa fa-wrench" aria-hidden="true"></i> <span id="competences_p4">C, Unix, programmation parallèle</span></p>
               </div>
-
-              <hr class="project-seperation">
-
-              <a href="https://www.youtube.com/channel/UCnxEvD2eagj2VgtkFL5wDHA" target="_blank" title="Lien vers ma chaîne"><i class="fa fa-external-link fa-3x project-link" aria-hidden="true"></i></a>
-            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/nature.jpg">
+              <img src="images/cube3.gif" alt="Nature" style="width:100%">
+              <div class="caption">
+                <h2 class="project-title" id="title_p5">Shaders et OpenGL</h2>
+                <hr class="project-seperation">
+                <p id="resume_p5">Programme codé en C++ avec Qt, créant <b>un cube à l'aide des shaders</b>. L'utilisateur peut ensuite interragir avec ce dernier en changeant sa couleur, son point de vue ou encore en le faisant tourner autour d'une ligne.</p>
+                <p><i class="fa fa-calendar" aria-hidden="true"></i> <span id="date_p5">Janvier 2018</span></p>
+                <p><i class="fa fa-wrench" aria-hidden="true"></i> <span id="competences_p5">C++, Qt, OpenGL, Shaders</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/fjords.jpg">
+              <img src="images/smn.png" alt="Fjords" style="width:100%">
+              <div class="caption">
+                <h2 class="project-title" id="title_p6">ShareMyNotes</h2>
+                <hr class="project-seperation">
+                <p id="resume_p6">Site développé en une semaine et déployé sur AWS. Il permet aux professeurs de <b>créer des notes</b> pour leur cours, et aux élèves <b>d'accéder à ces notes</b>, de <b>créer ou joindre des groupes</b> et d'y <b>partager leur travail</b>.</p>
+                <p><i class="fa fa-calendar" aria-hidden="true"></i> <span id="date_p6">Février 2018</span></p>
+                <p><i class="fa fa-wrench" aria-hidden="true"></i> <span id="competences_p6">Bootstrap, JavaScript, PHP, Laravel, MySQL, AWS</span></p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 card-project">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 project-image" style="background:url('images/site_web_q.jpg') no-repeat; background-size: cover; background-position: center;">
-            </div>
-
-            <div class="col-lg-6 col-md-12 project-infos">
-              <h2 class="project-title" id="nom_p3">Ce site web</h2>
-
-              <hr class="project-seperation">
-
-              <p class="project-description" id="resume_p3">
-                Ce site a pour but de <b>montrer ce que j'ai pu faire</b> et de vous permettre <b>d'avoir rapidement une idée de qui je suis</b>... Je pense qu'il est
-                important d'avoir un portfolio pour un développeur.
-                <br></br>
-                Le développement du site <b>m'a aussi permis de m'entraîner</b>, plus particulièrement sur l'aspect front-end. Ce site est toujours en construction,
-                mais j'espère qu'il vous plaît tout de même dans son état actuel !
-              </p>
-
-              <hr class="project-seperation">
-
-              <div class="project-stats">
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title" data-toggle="tooltip" title="Résultat"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="resultat_p3">
-                    Ma mère le trouve joli... (J'ai pas eu plus de retours pour le moment)
-                  </div>
-                </div>
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title" data-toggle="tooltip" title="Calendrier"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="date_p3">
-                    12 juillet 2017 - 13 juillet 2017
-                  </div>
-                </div>
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title" data-toggle="tooltip" title="Compétences"><i class="fa fa-wrench" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="competences_p3">
-                    HTML, CSS, JavaScript/jQuery, Bootstrap, utilisation de quelques librairies
-                  </div>
-                </div>
+      <div class="row projects-gallery">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/lights.jpg">
+              <img src="images/filler.jpeg" alt="Lights" style="width:100%">
+              <div class="caption">
+                <h2 class="project-title" id="title_p7">Jeu du Filler</h2>
+                <hr class="project-seperation">
+                <p id="resume_p7">Jeu codé en Java, <b>reprenant les règles du Filler</b>. On peut jouer <b>jusqu'à 4 personnes</b>, face à <b>des joueurs humains ou des IAs</b>. Il est possible <b>d'ajouter des obstacles</b>, <b>un brouillard de guerre</b> et de <b>créer ses propres niveaux</b>.</p>
+                <p><i class="fa fa-calendar" aria-hidden="true"></i> <span id="date_p7">Mai 2017 - Juin 2017</span></p>
+                <p><i class="fa fa-wrench" aria-hidden="true"></i> <span id="competences_p7">Java, création d'une interface graphique</span></p>
               </div>
-
-              <hr class="project-seperation">
-
-              <a href="" title="Lien vers le site"><i class="fa fa-external-link fa-3x project-link" aria-hidden="true"></i></a>
-            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/nature.jpg">
+              <img src="images/site_web_q.jpg" alt="Nature" style="width:100%">
+              <div class="caption">
+                <h2 class="project-title" id="title_p8">Ce site web</h2>
+                <hr class="project-seperation">
+                <p id="resume_p8">Site web <b>créé avec Bootstrap</b>, <b>plusieurs librairies</b> et <b>JavaScript</b>. Il n'y a pas de back-end, vu que ce n'est pas vraiment nécessaire. Ce site permet de <b>donner une rapide présentation de qui je suis et ce que je fais</b>.</p>
+                <p><i class="fa fa-calendar" aria-hidden="true"></i> <span id="date_p8">Juillet 2017</span></p>
+                <p><i class="fa fa-wrench" aria-hidden="true"></i> <span id="competences_p8">HTML, CSS, Bootstrap, JavaScript/jQuery</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/fjords.jpg">
+              <img src="images/ytbe2.jpeg" alt="Fjords" style="width:100%">
+              <div class="caption">
+                <h2 class="project-title" id="title_p9">Chaîne YouTube</h2>
+                <hr class="project-seperation">
+                <p id="resume_p9">Je fais des vidéos sur YouTube portant principalement sur <b>l'univers du jeux-vidéo</b>
+                mais également sur <b>n'importe quel sujet qui peut me paraître intéressant</b>. Aujourd'hui, a <b>plus de 100 000 abonnés et 9 millions de vues</b>.</p>
+                <p><i class="fa fa-calendar" aria-hidden="true"></i> <span id="date_p9">Depuis juillet 2011</span></p>
+                <p><i class="fa fa-wrench" aria-hidden="true"></i> <span id="competences_p9">Montage vidéo et photo, écriture, tournage,  SEO</span></p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 card-project">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 project-image" style="background:url('images/slides_q.jpg') no-repeat; background-size: cover; background-position: center;">
-            </div>
 
-            <div class="col-lg-6 col-md-12 project-infos">
-              <h2 class="project-title" id="nom_p4">Présentations orales</h2>
-
-              <hr class="project-seperation">
-
-              <p class="project-description" id="resume_p4">
-                <b>J'aime beaucoup faire des présentations orales</b> et je porte beaucoup d'attention à l'aspect de mes slides. Je pense
+      <div class="row projects-gallery">
+        <div class="col-md-4">
+          
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/nature.jpg">
+              <img src="images/slides_q.jpg" alt="Nature" style="width:100%">
+              <div class="caption">
+                <h2 class="project-title" id="title_p10">Présentations orals</h2>
+                <hr class="project-seperation">
+                <p id="resume_p10"><b>J'aime beaucoup faire des présentations orales</b> et je porte beaucoup d'attention à l'aspect de mes slides. Je pense
                 qu'elles doivent <b>comporter très peu de mots, et servir d'outil pour capter l'attention de l'audience</b> et non pas servir
-                de notes comme c'est trop souvent le cas.
-                <br><br>
-                J'ai mis <b>un lien vers un site regroupant pas mal de mes slides</b>. Je vous conseille en particulier la présentation sur la Nouvelle-Zélande. Vous
-                pourrez également <b>voir pas mal d'autres de mes projets</b>, qui n'apparaissent pas sur ce site pour l'instant.
-              </p>
-
-              <hr class="project-seperation">
-
-              <div class="project-stats">
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title"><i class="fa fa-line-chart" aria-hidden="true" data-toggle="tooltip" title="Résultat"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="resultat_p4">
-                    J'ai toujours eu des commentaires positifs sur l'aspect mes slides à la fin d'une présentation
-                  </div>
-                </div>
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title" data-toggle="tooltip" title="Calendrier"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="date_p4">
-                    Depuis le collège... probablement
-                  </div>
-                </div>
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title" data-toggle="tooltip" title="Compétences"><i class="fa fa-wrench" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="competences_p4">
-                    Présenter à l'oral, Photoshop, faire des recherches et savoir les expliquer
-                  </div>
-                </div>
+                de notes comme c'est trop souvent le cas</p>
+                <p><i class="fa fa-wrench" aria-hidden="true"></i> <span id="competences_p10">Oral presentation, Photoshop</span> </p>
               </div>
-
-              <hr class="project-seperation">
-
-              <a href="https://slides.com/isvoli" target="_blank" title="Lien vers mes slides"><i class="fa fa-external-link fa-3x project-link" aria-hidden="true"></i></a>
-            </div>
+            </a>
           </div>
+        </div>
+        <div class="col-md-4">
+          
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 card-project">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 project-image" style="background:url('images/photo2_q.jpg') no-repeat; background-size: cover; background-position: center;">
-            </div>
 
-            <div class="col-lg-6 col-md-12 project-infos">
-              <h2 class="project-title" id="nom_p5">Photos</h2>
-
-              <hr class="project-seperation">
-
-              <p class="project-description" id="resume_p5">
-                C'est <b>assez récent</b> mais pas étonnant vu mon intérêt pour la création de vidéo. Je suis très loin d'être un professionel,
-                il me reste encore énormément à apprendre et à découvrir !
-                <br><br>
-                <b>Toutes les photos de ce site ont été prises par moi</b>. Pour en voir d'autres, vous pouvez regarder mon instagram,
-                le lien est ci-dessous.
-              </p>
-
-              <hr class="project-seperation">
-
-              <div class="project-stats">
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title"><i class="fa fa-camera" aria-hidden="true" data-toggle="tooltip" title="Appareil"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10">
-                    Panasonic Lumix G7
-                  </div>
-                </div>
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title" data-toggle="tooltip" title="Calendrier"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="date_p5">
-                    Depuis juin 2017
-                  </div>
-                </div>
-                <div class="row project-stats-div">
-                  <div class="col-xs-1 text-center">
-                    <span class="stat-title" data-toggle="tooltip" title="Compétences"><i class="fa fa-wrench" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-sm-11 col-xs-10" id="competences_p5">
-                    Photographie, Photoshop
-                  </div>
-                </div>
-              </div>
-
-              <hr class="project-seperation">
-
-              <a href="https://www.instagram.com/iv2fi" target="_blank" title="Lien vers mon instagram"><i class="fa fa-external-link fa-3x project-link" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      
 
     <section id="bio">
       <div class="section-title-div">
@@ -413,16 +295,15 @@
             <div class="col-lg-8 col-md-12 bio-infos">
               <p class="bio-qa" id="question1">Ma date de naissance ? <span>Le 9 octobre 1995</span></p>
               <p class="bio-qa" id="question2">Où suis-je en ce moment ? <span>En train d'étudier à Cranfield !</span></p>
-              <p class="bio-qa" id="question3">Où est-ce que j'étudie ? <span>A Cranfield et à l'ISEP</span></p>
-              <p class="bio-qa" id="question4">Mon expérience ? <span>J'étais développeur web chez Equinoa et ai fait pas mal de projets en groupe lors de mes études.</span></p>
-              <p class="bio-qa" id="question5">Où est-ce que je me vois plus tard ? <span>Je ne sais pas trop ! Je pense que pour trouver ce qui nous
-              motive vraiment, il faut essayer un maximum de choses. C'est donc ce que je compte faire, et si quelque chose me plaît vraiment, j'aurais trouvé la réponse à cette question !</span></p>
+              <p class="bio-qa" id="question3">Où est-ce que j'étudie ? <span>A Cranfield (pas loin de Londres) et à l'ISEP (une école se trouvant à Paris).</span></p>
+              <p class="bio-qa" id="question4">Mon expérience professionnelle ? <span>J'étais développeur web chez Equinoa lors d'un stage de six mois.</span></p>
+              <p class="bio-qa" id="question5">Suis-je disponible ? <span>Oui ! Je recherche un stage de 5 mois à partir de mai 2018 dans le domaine de l'ingénierie logiciel.</span></p>
               <p class="bio-qa" id="question6">D'autres questions ? <span>Contactez-moi !</span></p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> 
 
     <section id="contact">
       <div class="row">
