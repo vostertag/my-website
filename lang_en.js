@@ -7,7 +7,7 @@ var en = {
   "titre_mes_projets" : "My projects",
   "instruction" : "For more informations on a project, click on it!",
   "title_p1": "ISEPReact",
-  "resume_p1": "<b>ISEPReact</b> is a website that will ease <b>the communication between students and teachers</b>." 
+  "resume_p1": "<b>ISEPReact</b> is a website that will ease <b>the communication between students and teachers</b>."
   + " I was part of the \"Opossums' group\" (that you can see in this picture) and together, we have sold and created this app.",
   "date_p1": "April 2017 - June 2017",
   "competences_p1": "Scrum, HTML, CSS, JavaScript, Spring Boot, Bootstrap",
@@ -46,7 +46,7 @@ var en = {
   "competences_p7": "Java, creating a graphical interface",
   "title_p8": "This website",
   "resume_p8": "Website <b>created with boothstrap</b>, <b>some libraries</b> and <b>JavaScript</b>. "
-  + "There is no back-end since there is no need for one here. This website's goal is to <b>introduce " 
+  + "There is no back-end since there is no need for one here. This website's goal is to <b>introduce "
   + "who I am and what I do</b>.",
   "date_p8": "July 2017",
   "competences_p8": "HTML, CSS, Bootstrap, JavaScript/jQuery",
@@ -60,11 +60,15 @@ var en = {
   + "I think that they must contain <b>few words</b>, and be used to <b>grab attention</b> rather than serving as notes "
   + "like it is too often the case.",
   "competences_p10": "Oral presentation, Photoshop",
+  "title_p11": "SMeltre",
+  "resume_p11": "Created during my internship at <b>HP Inc.</b>, SMeltre is a <b>visualisation tool</b> to help people understand how <b>low-level attacks</b> work (more precisely Spectre and Meltdown). ",
+  "competences_p11": "C/C++, Qt, Architecture, GUI",
+  "date_p11": "May 2018 - October 2018",
   "qui_suis_je_titre" : "About me",
   "question1" : "When was I born? <span>October, 9th 1995</span>",
-  "question2" : "Where can you find me? <span>Studying at Cranfield!",
-  "question3" : "Where do I study? <span>At Cranfield (not far away from London) and at ISEP (in Paris).",
-  "question4" : "My work experience? <span>I was a web developer for Equinoa during a 6 moths internship.</span>",
-  "question5" : "Am I available for hire? <span>Yes! I am looking for an internship in software engineering starting in may 2018.</span>",
+  "question2" : "Where can you find me? <span>Looking for a first job!",
+  "question3" : "Where did I study? <span>At Cranfield (not far away from London) and at ISEP (in Paris).",
+  "question4" : "My work experience? <span>I was a web developer for Equinoa during a 6 moths internship as well as a security research intern at HP in Bristol.</span>",
+  "question5" : "Am I available for hire? <span>Yes!</span>",
   "question6" : "Do you want to know more about me? <span>Contact me!</span>",
 }
